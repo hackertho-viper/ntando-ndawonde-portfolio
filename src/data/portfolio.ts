@@ -1,0 +1,208 @@
+import portraitAsset from "@/assets/portrait.jpg.asset.json";
+import awsCertAsset from "@/assets/aws-ccp.png.asset.json";
+import cputLetterAsset from "@/assets/cput-letter.png.asset.json";
+
+export const profile = {
+  name: "Ntando Ndawonde",
+  headline:
+    "Computer Engineering Graduate | Software Developer | AWS Cloud Practitioner",
+  location: "Bellville, South Africa",
+  email: "ndawonden536@gmail.com",
+  phone: "+27 73 102 2937",
+  phoneHref: "tel:+27731022937",
+  linkedin: "https://www.linkedin.com/in/ntando-ndawonde-367540392",
+  github: "https://github.com/Hackertho-viper",
+  photo: portraitAsset.url,
+  intro:
+    "A Computer Engineering graduate with practical experience across software development, cloud computing, IoT, embedded systems, networking, automation and computer graphics.",
+  about: [
+    "I am a Computer Engineering graduate from the Cape Peninsula University of Technology, with hands-on experience building software, embedded systems and cloud-based solutions.",
+    "My interests sit where software meets infrastructure: software development, cloud engineering on AWS, backend development, IoT, embedded systems and automation. I enjoy taking a problem from circuit and sensor level all the way up to an application and a deployment.",
+    "I work carefully and methodically, and I care about systems that are reliable, secure and understandable by the people who maintain them.",
+  ],
+};
+
+export const skillGroups = [
+  {
+    title: "Programming",
+    items: ["Java", "C", "JavaScript", "Python", "HTML", "CSS"],
+  },
+  {
+    title: "Software & Web",
+    items: [
+      "Node.js",
+      "React Native",
+      "MongoDB",
+      "NetBeans",
+      "VS Code",
+      "Git",
+      "GitHub",
+      "WebGL",
+    ],
+  },
+  {
+    title: "Cloud & Infrastructure",
+    items: [
+      "AWS",
+      "Amazon EC2",
+      "Amazon S3",
+      "IAM",
+      "Amazon VPC",
+      "Amazon CloudWatch",
+      "AWS Cloud Foundations",
+    ],
+  },
+  {
+    title: "Engineering",
+    items: [
+      "Arduino",
+      "Embedded Systems",
+      "IoT",
+      "Sensors",
+      "MATLAB Simulink",
+      "Siemens TIA Portal",
+      "PLC Programming",
+    ],
+  },
+  {
+    title: "Networking",
+    items: [
+      "Cisco Packet Tracer",
+      "Networking Fundamentals",
+      "VLANs",
+      "Routing",
+      "DHCP",
+      "NAT",
+      "ACLs",
+      "EtherChannel",
+      "STP",
+      "Port Security",
+      "Inter-VLAN Routing",
+      "Cisco IOS CLI",
+    ],
+  },
+  {
+    title: "Professional Strengths",
+    items: [
+      "Problem Solving",
+      "Attention to Detail",
+      "Interpersonal Communication",
+      "Teamwork",
+      "Planning",
+      "Organisation",
+      "Coordination",
+      "Time Management",
+      "Troubleshooting",
+      "Adaptability",
+      "Leadership",
+    ],
+  },
+];
+
+export type Project = {
+  title: string;
+  description: string;
+  technologies: string[];
+  achievement?: string;
+  githubUrl?: string;
+  liveDemoUrl?: string;
+  featured?: boolean;
+};
+
+export const projects: Project[] = [
+  {
+    title: "GreenGuard SA – Smart Greenhouse Monitoring System",
+    description:
+      "A smart greenhouse monitoring and automation system developed to address overheating, poor soil conditions, and inefficient water usage. The system integrates temperature, soil moisture, light and ultrasonic sensors with automated control features.",
+    technologies: ["Arduino", "IoT", "Sensors", "Embedded Systems"],
+    achievement: "2nd Place — MICTSETA IoT Hackathon (2026)",
+    featured: true,
+  },
+  {
+    title: "Smart Solar-Powered Washing Machine",
+    description:
+      "An energy-efficient washing machine controller powered by solar energy, using adaptive power management and sensor integration for efficient operation.",
+    technologies: ["Java", "Embedded Systems", "Simulation Tools"],
+  },
+  {
+    title: "Medical Appointment Management System",
+    description:
+      "A C-based application enabling patients to book, view and manage appointments. The system includes structured program logic and data flow between patients and doctors, with testing and debugging for reliable functionality.",
+    technologies: ["C Programming"],
+  },
+  {
+    title: "PLC Four-Way Traffic Controller",
+    description:
+      "A four-way traffic light controller designed and simulated using PLC ladder logic. Implemented timers and logical sequencing to manage traffic flow safely and efficiently.",
+    technologies: ["Siemens TIA Portal", "PLC Programming"],
+  },
+  {
+    title: "Embedded System with Motor, Ultrasonic Sensor, LEDs and LCD Menu",
+    description:
+      "An embedded system integrating a motor, ultrasonic sensor, LEDs and an LCD menu interface. The project demonstrates sensor integration and hardware-software interaction.",
+    technologies: ["Arduino", "Embedded Systems", "Sensors"],
+  },
+  {
+    title: "Cube Color Matcher / Crystal Gate Run",
+    description:
+      "An interactive browser-based project using WebGL and JavaScript. Implemented translation, rotation and scaling transformations, shaders, buffers, event handling and animation techniques.",
+    technologies: ["WebGL", "JavaScript", "HTML", "CSS"],
+  },
+];
+
+export const certifications = [
+  {
+    name: "AWS Certified Cloud Practitioner (CLF-C02)",
+    issuer: "Amazon Web Services",
+    year: "2026",
+    fileUrl: awsCertAsset.url,
+  },
+  {
+    name: "AWS Academy Graduate – AWS Academy Cloud Foundations",
+    issuer: "AWS Academy",
+    year: "2026",
+  },
+];
+
+export const achievements = [
+  {
+    title: "2nd Place — MICTSETA IoT Hackathon",
+    year: "2026",
+    description:
+      "Awarded second place for GreenGuard SA, a smart greenhouse monitoring and automation system.",
+    highlight: true,
+  },
+  {
+    title: "Distinction — Software Development 2",
+    year: "2025",
+    description: "Achieved a distinction in Software Development 2.",
+  },
+  {
+    title: "Distinction — Engineering Physics 2",
+    year: "2025",
+    description: "Achieved a distinction in Engineering Physics 2.",
+  },
+  {
+    title: "Most Promising Young Player Award — SAB KZN Season",
+    year: "2021–2022",
+    description: "Recognised as the most promising young player of the season.",
+  },
+];
+
+export const education = {
+  institution: "Cape Peninsula University of Technology (CPUT)",
+  qualification: "National Diploma in Computer Engineering",
+  completed: "Completed April 2025",
+  letterUrl: cputLetterAsset.url,
+};
+
+export const navItems = [
+  { label: "Home", id: "home" },
+  { label: "About", id: "about" },
+  { label: "Skills", id: "skills" },
+  { label: "Projects", id: "projects" },
+  { label: "Certifications", id: "certifications" },
+  { label: "Achievements", id: "achievements" },
+  { label: "Education", id: "education" },
+  { label: "Contact", id: "contact" },
+];
