@@ -5,6 +5,9 @@ import matricAsset from "@/assets/matric-award.jpg.asset.json";
 import mictsetaAsset from "@/assets/mictseta.jpg.asset.json";
 import awsCertAsset from "@/assets/aws-ccp.png.asset.json";
 import cputLetterAsset from "@/assets/cput-letter.png.asset.json";
+import cvAsset from "@/assets/cv.pdf.asset.json";
+import galleryAwsAsset from "@/assets/gallery-aws.jpg.asset.json";
+import galleryPortraitAsset from "@/assets/gallery-portrait.png.asset.json";
 
 export const profile = {
   name: "Ntando Ndawonde",
@@ -17,6 +20,8 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/ntando-ndawonde-367540392",
   github: "https://github.com/Hackertho-viper",
   photo: portraitAsset.url,
+  cv: cvAsset.url,
+  cvFilename: "Ntando_Ndawonde_CV.pdf",
   intro:
     "A Computer Engineering graduate with practical experience across software development, cloud computing, IoT, embedded systems, networking, automation and computer graphics.",
   about: [
@@ -236,6 +241,17 @@ export const education = {
   ],
 };
 
+export const gallery = [
+  {
+    url: galleryAwsAsset.url,
+    alt: "Ntando Ndawonde at the AWS Skills Centre in Cape Town holding an AWS Skills Centre bag",
+  },
+  {
+    url: galleryPortraitAsset.url,
+    alt: "Black-and-white portrait of Ntando Ndawonde wearing round sunglasses and a traditional headpiece",
+  },
+];
+
 export const navItems = [
   { label: "Home", id: "home" },
   { label: "About", id: "about" },
@@ -244,5 +260,6 @@ export const navItems = [
   { label: "Certifications", id: "certifications" },
   { label: "Achievements", id: "achievements" },
   { label: "Education", id: "education" },
+  { label: "Gallery", id: "gallery" },
   { label: "Contact", id: "contact" },
 ];
