@@ -12,22 +12,22 @@ export function Hero() {
             "radial-gradient(60rem 30rem at 15% -10%, oklch(0.256 0.052 264) 0%, transparent 65%)",
         }}
       />
-      <div className="container-page relative grid gap-14 py-20 sm:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+      <div className="container-page relative grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-12">
         <Reveal>
           <p className="font-display text-xs uppercase tracking-[0.24em] text-primary">
             {profile.location}
           </p>
-          <h1 className="mt-4 text-4xl font-semibold leading-[1.08] sm:text-5xl lg:text-6xl">
+          <h1 className="mt-3 text-4xl font-semibold leading-[1.08] sm:text-5xl">
             {profile.name}
           </h1>
-          <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
+          <p className="mt-3 max-w-xl text-base text-muted-foreground sm:text-lg">
             {profile.headline}
           </p>
-          <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             {profile.intro}
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="#projects"
               className="inline-flex items-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
