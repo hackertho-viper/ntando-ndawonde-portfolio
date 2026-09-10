@@ -44,8 +44,9 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:block">
-          <a
+        <div className="hidden items-center gap-2 lg:flex">
+          <ThemeToggle />
+          <
             href={`mailto:${profile.email}?subject=CV%20request`}
             className="inline-flex items-center rounded-md border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
           >
