@@ -90,6 +90,7 @@ export function Navbar() {
             )}
           </svg>
         </button>
+        </div>
       </nav>
 
       {open && (
