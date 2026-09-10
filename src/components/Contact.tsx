@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { Reveal, Section } from "@/components/Reveal";
 
@@ -58,9 +59,10 @@ export function Contact() {
                 <dt className="text-muted-foreground">Email</dt>
                 <dd>
                   <a
-                    className="hover:text-primary"
+                    className="inline-flex items-center gap-2 transition-colors hover:text-primary"
                     href={`mailto:${profile.email}`}
                   >
+                    <Mail size={16} className="shrink-0 text-primary" aria-hidden="true" />
                     {profile.email}
                   </a>
                 </dd>
@@ -68,14 +70,21 @@ export function Contact() {
               <div>
                 <dt className="text-muted-foreground">Phone</dt>
                 <dd>
-                  <a className="hover:text-primary" href={profile.phoneHref}>
+                  <a
+                    className="inline-flex items-center gap-2 transition-colors hover:text-primary"
+                    href={profile.phoneHref}
+                  >
+                    <Phone size={16} className="shrink-0 text-primary" aria-hidden="true" />
                     {profile.phone}
                   </a>
                 </dd>
               </div>
               <div>
                 <dt className="text-muted-foreground">Location</dt>
-                <dd>{profile.location}</dd>
+                <dd className="inline-flex items-center gap-2">
+                  <MapPin size={16} className="shrink-0 text-primary" aria-hidden="true" />
+                  {profile.location}
+                </dd>
               </div>
             </dl>
 
@@ -96,16 +105,18 @@ export function Contact() {
                 href={profile.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md border border-border px-4 py-2.5 text-sm text-muted-foreground hover:border-primary/60 hover:text-foreground"
+                className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2.5 text-sm text-muted-foreground transition-colors hover:border-primary/60 hover:text-foreground"
               >
+                <Linkedin size={16} className="text-primary" aria-hidden="true" />
                 LinkedIn
               </a>
               <a
                 href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md border border-border px-4 py-2.5 text-sm text-muted-foreground hover:border-primary/60 hover:text-foreground"
+                className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2.5 text-sm text-muted-foreground transition-colors hover:border-primary/60 hover:text-foreground"
               >
+                <Github size={16} className="text-primary" aria-hidden="true" />
                 GitHub
               </a>
             </div>
