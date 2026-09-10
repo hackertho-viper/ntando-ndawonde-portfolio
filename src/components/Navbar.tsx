@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { navItems, profile } from "@/data/portfolio";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -46,7 +47,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-2 lg:flex">
           <ThemeToggle />
-          <
+          <a
             href={`mailto:${profile.email}?subject=CV%20request`}
             className="inline-flex items-center rounded-md border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
           >
