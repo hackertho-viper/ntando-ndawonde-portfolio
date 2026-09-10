@@ -97,7 +97,7 @@ export function Projects() {
                   src={p.image}
                   alt={p.imageAlt ?? p.title}
                   loading="lazy"
-                  className="mb-5 h-56 w-full rounded-lg border border-border object-cover sm:h-72"
+                  className="mb-5 max-h-[26rem] w-full rounded-lg border border-border bg-surface-2 object-contain"
                 />
               )}
               <h3 className="font-display text-lg font-semibold">{p.title}</h3>
@@ -206,7 +206,7 @@ export function Achievements() {
                   src={a.image}
                   alt={a.imageAlt ?? a.title}
                   loading="lazy"
-                  className="mt-4 h-52 w-full rounded-lg border border-border object-cover object-top"
+                  className="mt-4 max-h-[24rem] w-full rounded-lg border border-border bg-surface-2 object-contain"
                 />
               )}
             </div>
@@ -227,7 +227,7 @@ export function Gallery() {
               src={g.url}
               alt={g.alt}
               loading="lazy"
-              className="h-80 w-full rounded-xl border border-border object-cover object-top transition-colors hover:border-primary/45 sm:h-96"
+              className="max-h-[30rem] w-full rounded-xl border border-border bg-surface-2 object-contain transition-colors hover:border-primary/45"
             />
           </Reveal>
         ))}
@@ -266,7 +266,7 @@ export function Education() {
                 src={g.url}
                 alt={g.alt}
                 loading="lazy"
-                className="h-40 w-full rounded-lg border border-border object-cover sm:h-48"
+                className="max-h-64 w-full rounded-lg border border-border bg-surface-2 object-contain"
               />
             ))}
           </div>
