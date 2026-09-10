@@ -48,10 +48,11 @@ export function Navbar() {
         <div className="hidden items-center gap-2 lg:flex">
           <ThemeToggle />
           <a
-            href={`mailto:${profile.email}?subject=CV%20request`}
+            href={profile.cv}
+            download={profile.cvFilename}
             className="inline-flex items-center rounded-md border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
           >
-            Request CV
+            Download CV
           </a>
         </div>
 
@@ -112,11 +113,12 @@ export function Navbar() {
             ))}
             <li className="px-3 pt-2 pb-3">
               <a
-                href={`mailto:${profile.email}?subject=CV%20request`}
+                href={profile.cv}
+                download={profile.cvFilename}
                 onClick={() => setOpen(false)}
                 className="block rounded-md bg-primary px-4 py-3 text-center text-sm font-medium text-primary-foreground"
               >
-                Request CV
+                Download CV
               </a>
             </li>
           </ul>
