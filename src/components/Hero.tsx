@@ -35,10 +35,11 @@ export function Hero() {
               View my projects
             </a>
             <a
-              href={`mailto:${profile.email}?subject=CV%20request`}
+              href={profile.cv}
+              download={profile.cvFilename}
               className="inline-flex items-center rounded-md border border-primary/60 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-primary/15"
             >
-              Request CV
+              Download CV
             </a>
             <a
               href="#contact"
