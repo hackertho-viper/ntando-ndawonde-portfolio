@@ -1,3 +1,4 @@
+import { Github, Linkedin } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { Reveal } from "@/components/Reveal";
 
@@ -49,21 +50,23 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center gap-5 text-sm">
+          <div className="mt-6 flex flex-wrap items-center gap-5 text-sm">
             <a
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+              className="inline-flex items-center gap-2 text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
             >
+              <Linkedin size={16} className="shrink-0 text-primary" aria-hidden="true" />
               LinkedIn
             </a>
             <a
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+              className="inline-flex items-center gap-2 text-muted-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
             >
+              <Github size={16} className="shrink-0 text-primary" aria-hidden="true" />
               GitHub
             </a>
           </div>
@@ -80,7 +83,7 @@ export function Hero() {
               width={780}
               height={1035}
               alt="Portrait of Ntando Ndawonde, Computer Engineering graduate and software developer"
-              className="relative h-[22rem] w-[17rem] rounded-[1.75rem] object-cover object-top shadow-2xl sm:h-[26rem] sm:w-[20rem]"
+              className="relative h-auto w-full max-w-[18rem] rounded-[1.75rem] bg-surface-2 object-contain shadow-2xl sm:max-w-[21rem]"
             />
           </div>
         </Reveal>
