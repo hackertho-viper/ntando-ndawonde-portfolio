@@ -91,6 +91,14 @@ export function Projects() {
                   Featured project
                 </span>
               )}
+              {p.image && (
+                <img
+                  src={p.image}
+                  alt={p.imageAlt ?? p.title}
+                  loading="lazy"
+                  className="mb-5 h-56 w-full rounded-lg border border-border object-cover sm:h-72"
+                />
+              )}
               <h3 className="font-display text-lg font-semibold">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {p.description}
@@ -192,6 +200,14 @@ export function Achievements() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {a.description}
               </p>
+              {a.image && (
+                <img
+                  src={a.image}
+                  alt={a.imageAlt ?? a.title}
+                  loading="lazy"
+                  className="mt-4 h-52 w-full rounded-lg border border-border object-cover"
+                />
+              )}
             </div>
           </Reveal>
         ))}
@@ -222,6 +238,18 @@ export function Education() {
           >
             View letter of completion
           </a>
+
+          <div className="mt-6 grid grid-cols-2 gap-3">
+            {education.gallery.map((g) => (
+              <img
+                key={g.url}
+                src={g.url}
+                alt={g.alt}
+                loading="lazy"
+                className="h-40 w-full rounded-lg border border-border object-cover sm:h-48"
+              />
+            ))}
+          </div>
         </div>
       </Reveal>
     </Section>
