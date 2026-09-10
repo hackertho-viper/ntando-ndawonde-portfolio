@@ -1,4 +1,8 @@
-import portraitAsset from "@/assets/portrait.jpg.asset.json";
+import portraitAsset from "@/assets/portrait-grad.jpg.asset.json";
+import grad1Asset from "@/assets/grad-1.jpg.asset.json";
+import grad2Asset from "@/assets/grad-2.jpg.asset.json";
+import matricAsset from "@/assets/matric-award.jpg.asset.json";
+import mictsetaAsset from "@/assets/mictseta.jpg.asset.json";
 import awsCertAsset from "@/assets/aws-ccp.png.asset.json";
 import cputLetterAsset from "@/assets/cput-letter.png.asset.json";
 
@@ -104,6 +108,8 @@ export type Project = {
   description: string;
   technologies: string[];
   achievement?: string;
+  image?: string;
+  imageAlt?: string;
   githubUrl?: string;
   liveDemoUrl?: string;
   featured?: boolean;
@@ -116,6 +122,9 @@ export const projects: Project[] = [
       "A smart greenhouse monitoring and automation system developed to address overheating, poor soil conditions, and inefficient water usage. The system integrates temperature, soil moisture, light and ultrasonic sensors with automated control features.",
     technologies: ["Arduino", "IoT", "Sensors", "Embedded Systems"],
     achievement: "2nd Place — MICTSETA IoT Hackathon (2026)",
+    image: mictsetaAsset.url,
+    imageAlt:
+      "Ntando Ndawonde and his team holding the Google IoT Innovation Hackathon first runner-up prize cheque",
     featured: true,
   },
   {
@@ -164,13 +173,34 @@ export const certifications = [
   },
 ];
 
-export const achievements = [
+export type Achievement = {
+  title: string;
+  year: string;
+  description: string;
+  highlight?: boolean;
+  image?: string;
+  imageAlt?: string;
+};
+
+export const achievements: Achievement[] = [
   {
     title: "2nd Place — MICTSETA IoT Hackathon",
     year: "2026",
     description:
       "Awarded second place for GreenGuard SA, a smart greenhouse monitoring and automation system.",
     highlight: true,
+    image: mictsetaAsset.url,
+    imageAlt:
+      "Ntando Ndawonde with his hackathon team holding the IoT Innovation Hackathon runner-up cheque",
+  },
+  {
+    title: "Highest Overall Grade — Electrical Technology (Grade 12)",
+    year: "Matric",
+    description:
+      "Received the highest overall grade in Electrical Technology in Grade 12.",
+    image: matricAsset.url,
+    imageAlt:
+      "Ntando Ndawonde receiving his Grade 12 Electrical Technology award on stage",
   },
   {
     title: "Distinction — Software Development 2",
@@ -194,6 +224,16 @@ export const education = {
   qualification: "National Diploma in Computer Engineering",
   completed: "Completed April 2025",
   letterUrl: cputLetterAsset.url,
+  gallery: [
+    {
+      url: grad1Asset.url,
+      alt: "Ntando Ndawonde in graduation attire at the CPUT graduation ceremony",
+    },
+    {
+      url: grad2Asset.url,
+      alt: "Ntando Ndawonde holding his graduation certificate on graduation day",
+    },
+  ],
 };
 
 export const navItems = [
