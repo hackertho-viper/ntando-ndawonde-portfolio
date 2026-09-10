@@ -173,7 +173,16 @@ export const certifications = [
   },
 ];
 
-export const achievements = [
+export type Achievement = {
+  title: string;
+  year: string;
+  description: string;
+  highlight?: boolean;
+  image?: string;
+  imageAlt?: string;
+};
+
+export const achievements: Achievement[] = [
   {
     title: "2nd Place — MICTSETA IoT Hackathon",
     year: "2026",
