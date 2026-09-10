@@ -55,6 +55,10 @@ export function Navbar() {
           </a>
         </div>
 
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+        </div>
+
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
