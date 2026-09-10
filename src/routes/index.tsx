@@ -6,6 +6,7 @@ import {
   Achievements,
   Certifications,
   Education,
+  Gallery,
   Projects,
   Skills,
 } from "@/components/Sections";
@@ -42,6 +43,7 @@ function Index() {
         <Certifications />
         <Achievements />
         <Education />
+        <Gallery />
         <Contact />
       </main>
       <Footer />

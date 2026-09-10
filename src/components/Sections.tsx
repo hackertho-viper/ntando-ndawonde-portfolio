@@ -2,6 +2,7 @@ import {
   achievements,
   certifications,
   education,
+  gallery,
   profile,
   projects,
   skillGroups,
@@ -209,6 +210,25 @@ export function Achievements() {
                 />
               )}
             </div>
+          </Reveal>
+        ))}
+      </div>
+    </Section>
+  );
+}
+
+export function Gallery() {
+  return (
+    <Section id="gallery" eyebrow="Gallery" title="My Gallery">
+      <div className="grid gap-5 sm:grid-cols-2">
+        {gallery.map((g, i) => (
+          <Reveal key={g.url} delay={i * 60}>
+            <img
+              src={g.url}
+              alt={g.alt}
+              loading="lazy"
+              className="h-80 w-full rounded-xl border border-border object-cover object-top transition-colors hover:border-primary/45 sm:h-96"
+            />
           </Reveal>
         ))}
       </div>
