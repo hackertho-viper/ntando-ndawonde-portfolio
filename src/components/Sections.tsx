@@ -205,7 +205,7 @@ export function Achievements() {
                   src={a.image}
                   alt={a.imageAlt ?? a.title}
                   loading="lazy"
-                  className="mt-4 h-52 w-full rounded-lg border border-border object-cover"
+                  className="mt-4 h-52 w-full rounded-lg border border-border object-cover object-top"
                 />
               )}
             </div>
