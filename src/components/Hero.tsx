@@ -83,7 +83,7 @@ export function Hero() {
               width={780}
               height={1035}
               alt="Portrait of Ntando Ndawonde, Computer Engineering graduate and software developer"
-              className="relative h-auto w-full max-w-[18rem] rounded-[1.75rem] bg-surface-2 object-contain shadow-2xl sm:max-w-[21rem]"
+              className="relative h-auto max-h-[26rem] w-full max-w-[17rem] rounded-[1.75rem] bg-surface-2 object-contain shadow-2xl sm:max-w-[19rem]"
             />
           </div>
         </Reveal>
