@@ -305,6 +305,10 @@ export const gallery = [
     alt: "Ntando Ndawonde at the AWS Skills Centre in Cape Town holding an AWS Skills Centre bag",
   },
   {
+    url: galleryImage4Asset.url,
+    alt: "Portrait of Ntando Ndawonde in a black beanie and watch with red and blue studio lighting",
+  },
+  {
     url: galleryPortraitAsset.url,
     alt: "Black-and-white portrait of Ntando Ndawonde wearing round sunglasses and a traditional headpiece",
   },
