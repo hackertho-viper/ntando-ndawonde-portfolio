@@ -169,6 +169,21 @@ export const projects: Project[] = [
       "An interactive browser-based project using WebGL and JavaScript. Implemented translation, rotation and scaling transformations, shaders, buffers, event handling and animation techniques.",
     technologies: ["WebGL", "JavaScript", "HTML", "CSS"],
   },
+  {
+    title: "AI Productivity Assistant (Ascent AI)",
+    description:
+      "An AI-powered workplace productivity platform that combines five integrated tools in one application: a Smart Email Generator, Meeting Notes Summarizer, AI Task Planner, AI Research Assistant, and AI Chatbot. Modules share data — for example, action items from meeting summaries can flow straight into the Task Planner — and outputs are always editable, uncertainty is handled transparently, and fabricated information is avoided.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "AI / LLM integration",
+      "TanStack React Start",
+      "Server functions",
+    ],
+    githubUrl: "https://github.com/hackertho-viper/AI-Producivity-Assitant",
+    liveDemoUrl: "https://ntandondawonde-ai-assitant.lovable.app",
+  },
 ];
 
 export const certifications = [
