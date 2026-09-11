@@ -300,6 +300,14 @@ export const education = {
   ],
 };
 
+export const training = [
+  {
+    name: "Google Essentials",
+    provider: "CAPACITI",
+    description: "One-week professional training programme",
+  },
+];
+
 export const gallery = [
   {
     url: galleryAwsAsset.url,
