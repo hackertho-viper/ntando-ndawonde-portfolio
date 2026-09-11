@@ -5,7 +5,13 @@ import matricAsset from "@/assets/matric-award.jpg.asset.json";
 import mictsetaAsset from "@/assets/mictseta.jpg.asset.json";
 import awsCertAsset from "@/assets/aws-ccp.png.asset.json";
 import cputLetterAsset from "@/assets/cput-letter.png.asset.json";
-import cvAsset from "@/assets/cv.pdf.asset.json";
+import cvAsset from "@/assets/cv-final.pdf.asset.json";
+import certGoogleAiEssentials from "@/assets/cert-google-ai-essentials.pdf.asset.json";
+import certIntroToAi from "@/assets/cert-intro-to-ai.pdf.asset.json";
+import certArtOfPrompting from "@/assets/cert-art-of-prompting.pdf.asset.json";
+import certMaximizeProductivity from "@/assets/cert-maximize-productivity.pdf.asset.json";
+import certStayAhead from "@/assets/cert-stay-ahead.pdf.asset.json";
+import certUseAiResponsibly from "@/assets/cert-use-ai-responsibly.pdf.asset.json";
 import galleryAwsAsset from "@/assets/gallery-aws.jpg.asset.json";
 import galleryPortraitAsset from "@/assets/gallery-portrait.png.asset.json";
 
@@ -175,6 +181,42 @@ export const certifications = [
     name: "AWS Academy Graduate – AWS Academy Cloud Foundations",
     issuer: "AWS Academy",
     year: "2026",
+  },
+  {
+    name: "Google AI Essentials",
+    issuer: "Google",
+    year: "2026",
+    fileUrl: certGoogleAiEssentials.url,
+  },
+  {
+    name: "Introduction to AI",
+    issuer: "Google (Coursera)",
+    year: "2026",
+    fileUrl: certIntroToAi.url,
+  },
+  {
+    name: "Discover the Art of Prompting",
+    issuer: "Google (Coursera)",
+    year: "2026",
+    fileUrl: certArtOfPrompting.url,
+  },
+  {
+    name: "Maximize Productivity With AI Tools",
+    issuer: "Google (Coursera)",
+    year: "2026",
+    fileUrl: certMaximizeProductivity.url,
+  },
+  {
+    name: "Stay Ahead of the AI Curve",
+    issuer: "Google (Coursera)",
+    year: "2026",
+    fileUrl: certStayAhead.url,
+  },
+  {
+    name: "Use AI Responsibly",
+    issuer: "Google (Coursera)",
+    year: "2026",
+    fileUrl: certUseAiResponsibly.url,
   },
 ];
 
