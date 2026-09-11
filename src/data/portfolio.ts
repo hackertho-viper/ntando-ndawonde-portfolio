@@ -13,6 +13,7 @@ import certMaximizeProductivity from "@/assets/cert-maximize-productivity.pdf.as
 import certStayAhead from "@/assets/cert-stay-ahead.pdf.asset.json";
 import certUseAiResponsibly from "@/assets/cert-use-ai-responsibly.pdf.asset.json";
 import galleryAwsAsset from "@/assets/gallery-aws.jpg.asset.json";
+import galleryImage4Asset from "@/assets/gallery-image-4.png.asset.json";
 import galleryPortraitAsset from "@/assets/gallery-portrait.png.asset.json";
 
 export const profile = {
@@ -168,6 +169,21 @@ export const projects: Project[] = [
       "An interactive browser-based project using WebGL and JavaScript. Implemented translation, rotation and scaling transformations, shaders, buffers, event handling and animation techniques.",
     technologies: ["WebGL", "JavaScript", "HTML", "CSS"],
   },
+  {
+    title: "AI Productivity Assistant (Ascent AI)",
+    description:
+      "An AI-powered workplace productivity platform that combines five integrated tools in one application: a Smart Email Generator, Meeting Notes Summarizer, AI Task Planner, AI Research Assistant, and AI Chatbot. Modules share data — for example, action items from meeting summaries can flow straight into the Task Planner — and outputs are always editable, uncertainty is handled transparently, and fabricated information is avoided.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "AI / LLM integration",
+      "TanStack React Start",
+      "Server functions",
+    ],
+    githubUrl: "https://github.com/hackertho-viper/AI-Producivity-Assitant",
+    liveDemoUrl: "https://ntandondawonde-ai-assitant.lovable.app",
+  },
 ];
 
 export const certifications = [
@@ -287,6 +303,10 @@ export const gallery = [
   {
     url: galleryAwsAsset.url,
     alt: "Ntando Ndawonde at the AWS Skills Centre in Cape Town holding an AWS Skills Centre bag",
+  },
+  {
+    url: galleryImage4Asset.url,
+    alt: "Portrait of Ntando Ndawonde in a black beanie and watch with red and blue studio lighting",
   },
   {
     url: galleryPortraitAsset.url,
