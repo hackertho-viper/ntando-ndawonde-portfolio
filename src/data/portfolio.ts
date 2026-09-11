@@ -13,6 +13,7 @@ import certMaximizeProductivity from "@/assets/cert-maximize-productivity.pdf.as
 import certStayAhead from "@/assets/cert-stay-ahead.pdf.asset.json";
 import certUseAiResponsibly from "@/assets/cert-use-ai-responsibly.pdf.asset.json";
 import galleryAwsAsset from "@/assets/gallery-aws.jpg.asset.json";
+import galleryImage4Asset from "@/assets/gallery-image-4.png.asset.json";
 import galleryPortraitAsset from "@/assets/gallery-portrait.png.asset.json";
 
 export const profile = {
