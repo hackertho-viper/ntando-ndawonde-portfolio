@@ -8,6 +8,8 @@ import {
   skillGroups,
 } from "@/data/portfolio";
 import { Reveal, Section } from "@/components/Reveal";
+import { ExternalLink, Github } from "lucide-react";
+
 
 export function About() {
   return (
@@ -120,29 +122,59 @@ export function Projects() {
                 ))}
               </ul>
               {(p.githubUrl || p.liveDemoUrl) && (
-                <div className="mt-5 flex gap-3">
-                  {p.githubUrl && (
-                    <a
-                      href={p.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-md border border-border px-3 py-2 text-xs text-muted-foreground hover:border-primary/60 hover:text-foreground"
-                    >
-                      GitHub
-                    </a>
-                  )}
-                  {p.liveDemoUrl && (
-                    <a
-                      href={p.liveDemoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-md border border-border px-3 py-2 text-xs text-muted-foreground hover:border-primary/60 hover:text-foreground"
-                    >
-                      Live demo
-                    </a>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  {p.title === "AI Productivity Assistant (Ascent AI)" ? (
+                    <>
+                      {p.githubUrl && (
+                        <a
+                          href={p.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary/60 hover:text-primary"
+                        >
+                          <Github size={16} />
+                          View on GitHub
+                        </a>
+                      )}
+                      {p.liveDemoUrl && (
+                        <a
+                          href={p.liveDemoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                        >
+                          <ExternalLink size={16} />
+                          Live Demo
+                        </a>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      {p.githubUrl && (
+                        <a
+                          href={p.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded-md border border-border px-3 py-2 text-xs text-muted-foreground hover:border-primary/60 hover:text-foreground"
+                        >
+                          GitHub
+                        </a>
+                      )}
+                      {p.liveDemoUrl && (
+                        <a
+                          href={p.liveDemoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded-md border border-border px-3 py-2 text-xs text-muted-foreground hover:border-primary/60 hover:text-foreground"
+                        >
+                          Live demo
+                        </a>
+                      )}
+                    </>
                   )}
                 </div>
               )}
+
             </article>
           </Reveal>
         ))}
