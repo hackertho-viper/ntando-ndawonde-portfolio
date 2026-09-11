@@ -123,7 +123,8 @@ export function Projects() {
               </ul>
               {(p.githubUrl || p.liveDemoUrl) && (
                 <div className="mt-5 flex flex-wrap gap-3">
-                  {p.title === "AI Productivity Assistant (Ascent AI)" ? (
+                  {p.title === "AI Productivity Assistant (Ascent AI)" ||
+                  p.title === "Cube Color Matcher / Crystal Gate Run" ? (
                     <>
                       {p.githubUrl && (
                         <a

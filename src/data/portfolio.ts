@@ -183,6 +183,7 @@ export const projects: Project[] = [
     description:
       "An interactive browser-based project using WebGL and JavaScript. Implemented translation, rotation and scaling transformations, shaders, buffers, event handling and animation techniques.",
     technologies: ["WebGL", "JavaScript", "HTML", "CSS"],
+    githubUrl: "https://github.com/hackertho-viper/Cube-Color-Matcher-Game",
   },
 ];
 
